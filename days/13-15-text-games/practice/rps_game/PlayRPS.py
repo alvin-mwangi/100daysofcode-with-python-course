@@ -45,7 +45,7 @@ def game_loop(player1, player2, rolls):
 
     while count <= 3:    
         p1_roll = get_player_roll()
-        p2_roll = Roll('Scissors') #Roll(random.choice(rolls))
+        p2_roll = Roll(random.choice(rolls))
         
         outcome = p1_roll.can_defeat(p2_roll)
 
