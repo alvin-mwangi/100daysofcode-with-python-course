@@ -50,7 +50,7 @@ def game_loop(player1, player2, rolls):
         outcome = p1_roll.can_defeat(p2_roll)
 
         # display throws:
-        print("Round {} results:\n".format(count))
+        print("\nRound {} results:\n".format(count))
         print("You rolled: {}".format(p1_roll.name))
         print("{} rolled: {}".format(player2.name, p2_roll.name))
         print("Outcome: You {}!\n".format(outcome))
@@ -65,11 +65,11 @@ def game_loop(player1, player2, rolls):
     print("\nGAME OVER\n")
     
     if player1WinCount > player2WinCount:
-        print("Congratulations, {}! You Won!".format(player1.name))
+        print("Congratulations, {}! You Won!\n".format(player1.name))
     elif player1WinCount < player2WinCount:
-        print("Sorry {}, you lost. Better luck next time!".format(player1.name))
+        print("Sorry {}, you lost. Better luck next time!\n".format(player1.name))
     else:
-        print("Game ended with a Tie")
+        print("Game ended with a Tie\n")
 
 def main():
 
