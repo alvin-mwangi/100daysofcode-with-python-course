@@ -72,18 +72,24 @@ def game_loop(player1, player2, rolls):
         print("Game ended with a Tie\n")
 
 def main():
+    try:
+            
+        print_header()
+        
+        rolls = build_the_three_rolls()
 
-    print_header()
-    
-    rolls = build_the_three_rolls()
+        name = get_players_name()
+        
+        player1 = Player(name)
+        player2 = Player("Computer")
 
-    name = get_players_name()
-    
-    player1 = Player(name)
-    player2 = Player("Computer")
+        game_loop(player1, player2, rolls)
 
-    game_loop(player1, player2, rolls)
+    except Exception as x:
+        print("ERROR: {}".format(x))
+        raise
     
+
 if __name__ == "__main__":
     main()
 
