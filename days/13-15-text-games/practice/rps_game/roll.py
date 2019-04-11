@@ -14,8 +14,8 @@ class Roll:
         self.name = name
         
     def can_defeat(self, playerRoll): #playerRoll must be a Roll object; else this will fail        
-        print("playerRoll is {}".format(playerRoll.name))
-        print("self roll is {}".format(self.name))
+        # print("playerRoll is {}".format(playerRoll.name)) # convert to log message
+        # print("self roll is {}".format(self.name)) # conver to log message
 
         if(playerRoll.name == 'Rock'):
             if(self.name == 'Scissors'):
