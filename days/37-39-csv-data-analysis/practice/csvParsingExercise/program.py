@@ -61,6 +61,7 @@ def main():
     usRegions = sorted(usRegions)
     print(most_common_item_per_region('HouseholdIncome', usRegions))
 
+
 if __name__ == "__main__":
     init()
     main()
