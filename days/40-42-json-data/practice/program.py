@@ -22,7 +22,7 @@ def main():
             print('{} ({})'.format(item['Title'], item['Year']))
 
     else:
-        print(f'Sorry, no movies found containing the title {searchString}')
+        print(f"Sorry, no movies found containing the title '{searchString}'")
 
 if __name__ == "__main__":
     main()
