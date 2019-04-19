@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="v4FeIuwXgEi2SrU3GYFHMTLZhMn2CEi1Tk4MT7LN_lc" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<script>dataLayer = [];</script>
+
+	<script src="https://www.red-gate.com/simple-talk/wp-content/themes/simple-talk-theme/assets/scripts/authentication/authentication.min.js"></script>
+	<script src="https://authentication.red-gate.com/assets/scripts/synchroniseidentity.js"></script>
+
+		<title>Simple Talk - A technical journal and community hub from Redgate</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="A technical journal and community hub from Redgate"/>
+<link rel="canonical" href="https://www.red-gate.com/simple-talk/" />
+<link rel="next" href="https://www.red-gate.com/simple-talk/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Simple-Talk" />
+<meta property="og:description" content="A technical journal and community hub from Redgate" />
+<meta property="og:url" content="https://www.red-gate.com/simple-talk/" />
+<meta property="og:site_name" content="Simple Talk" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="A technical journal and community hub from Redgate" />
+<meta name="twitter:title" content="Simple Talk - A technical journal and community hub from Redgate" />
+<meta name="twitter:site" content="@simple_talk" />
+<meta name="twitter:image" content="https://www.red-gate.com/simple-talk/simpletalkbackground/" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.red-gate.com/simple-talk/#website","url":"https://www.red-gate.com/simple-talk/","name":"Simple Talk","potentialAction":{"@type":"SearchAction","target":"https://www.red-gate.com/simple-talk/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"Organization","url":"https://www.red-gate.com/simple-talk/","sameAs":["https://www.linkedin.com/company/simpletalkrg/","https://twitter.com/simple_talk"],"@id":"https://www.red-gate.com/simple-talk/#organization","name":"Redgate","logo":"https://www.red-gate.com/simple-talk/wp-content/uploads/2016/05/logo.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Simple Talk &raquo; Feed" href="https://www.red-gate.com/simple-talk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Simple Talk &raquo; Comments Feed" href="https://www.red-gate.com/simple-talk/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.red-gate.com\/simple-talk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wgs-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/wp-google-search/wgs.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='wgs2-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/wp-google-search/wgs2.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-none-css'  href='https://www.red-gate.com/simple-talk/wp-content/uploads/crayon-syntax-highlighter/themes/none/none.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-powershell-ise-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/crayon-syntax-highlighter/themes/powershell-ise/powershell-ise.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-ssms2012-simple-talk-css'  href='https://www.red-gate.com/simple-talk/wp-content/uploads/crayon-syntax-highlighter/themes/ssms2012-simple-talk/ssms2012-simple-talk.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-vs2012-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/crayon-syntax-highlighter/themes/vs2012/vs2012.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-consolas-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/crayon-syntax-highlighter/fonts/consolas.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-courier-new-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/crayon-syntax-highlighter/fonts/courier-new.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='yasrcss-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/yet-another-stars-rating/css/yasr.css' type='text/css' media='all' />
+<style id='yasrcss-inline-css' type='text/css'>
+
+			.rateit .rateit-range {
+				background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_16.png ) left 0px;
+			}
+
+			.rateit .rateit-hover {
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_16.png ) left -21px;
+			}
+
+			.rateit .rateit-selected {
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_16.png ) left -42px;
+			}
+
+			div.medium .rateit-range {
+			    /*White*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_24.png ) left 0px;
+			}
+
+			div.medium .rateit-hover {
+			    /*Red*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_24.png ) left -29px;
+			}
+
+			div.medium .rateit-selected {
+			    /*Yellow*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_24.png ) left -58px ;
+			}
+
+			/* Creating set 32 */
+
+			div.bigstars .rateit-range {
+			    /*White*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_32.png ) left 0px ;
+			}
+
+			div.bigstars .rateit-hover{
+			    /*red*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_32.png ) left -37px ;
+			}
+
+			div.bigstars .rateit-selected
+			{
+			    /*Gold*/
+			    background: url(https://www.red-gate.com/simple-talk/wp-content/uploads/yasr/rg/stars_32.png ) left -74px ;
+			}
+
+		
+</style>
+<link rel='stylesheet' id='jquery-ui-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/yet-another-stars-rating/css/jquery-ui.css?ver=1.11.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.red-gate.com/simple-talk/wp-includes/css/dashicons.min.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='yasrcsslightscheme-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/yet-another-stars-rating/css/yasr-table-light.css' type='text/css' media='all' />
+<link rel='stylesheet' id='post-views-counter-frontend-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/post-views-counter/css/frontend.css?ver=1.2.11' type='text/css' media='all' />
+<link rel='stylesheet' id='cbxwpbookmarkpublic-css-css'  href='https://www.red-gate.com/simple-talk/wp-content/plugins/st-cbxwpbookmark/public/css/cbxwpbookmark-public.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simpletalk-style-css'  href='https://www.red-gate.com/simple-talk/wp-content/themes/simple-talk-theme/style.css?ver=30' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cbxwpbookmark = {"ajaxurl":"https:\/\/www.red-gate.com\/simple-talk\/wp-admin\/admin-ajax.php","nonce":"50d9e3064f","cat_template":"\"\\r\\n            <div class=\\\"cbxbookmark-mycat-editbox\\\">\\r\\n\\r\\n                <input class=\\\"cbxbmedit-catname\\\" name=\\\"catname\\\" value=\\\"##catname##\\\" \\\/>                \\r\\n                <select class=\\\"cbxbmedit-privacy input-catprivacy\\\" name=\\\"catprivacy\\\">\\r\\n                  <option value=\\\"1\\\">Public<\\\/option>\\r\\n                  <option value=\\\"0\\\">Private<\\\/option>  \\r\\n                <\\\/select>\\r\\n                <a href=\\\"#\\\" class=\\\"cbxbookmark-btn cbxbookmark-cat-save\\\">Update <span class=\\\"cbxbm_busy\\\" style=\\\"display:none;\\\"><\\\/span><\\\/a>\\r\\n                <a href=\\\"#\\\" class=\\\"cbxbookmark-btn cbxbookmark-cat-close\\\">Close<\\\/a>\\r\\n            <\\\/div>\"","category_delete_success":"Category deleted successfully","category_delete_error":"Unable to delete the category","areyousuretodeletecat":"Are you sure you want to delete this Bookmark Category?","areyousuretodeletebookmark":"Are you sure you want to delete this Bookmark?","bookmark_failed":"Faild to Bookmark","bookmark_removed":"Bookmark Removed"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/st-cbxwpbookmark/public/js/cbxwpbookmark-public.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sendyOptions = {"ajaxUrl":"https:\/\/www.red-gate.com\/simple-talk\/wp-admin\/admin-ajax.php","lists":{".NET newsletter":"WP0iWal3XRl7637634pL0QAowg","Simple Talk":"Ww0i892QBs90gtk8qJjIW87g"},"is_user_logged_in":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/st-sendy/st-sendy.js?ver=4.9.9'></script>
+<link rel='https://api.w.org/' href='https://www.red-gate.com/simple-talk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.red-gate.com/simple-talk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.red-gate.com/simple-talk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.9" />
+<link rel="icon" href="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/07/gatebase-favicon.png" sizes="32x32" />
+<link rel="icon" href="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/07/gatebase-favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/07/gatebase-favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/07/gatebase-favicon.png" />
+ </head>
+
+<body class="home blog wp-custom-logo grid">
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N5S5ZL"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N5S5ZL');</script>
+	<!-- End Google Tag Manager -->
+
+	
+
+<header class="band header--primary js-header-primary-collapse">
+    <nav>
+		<a href="https://www.red-gate.com/" class="header--primary__app-logo-container"><img src="//cdn.rd.gt/assets/images/global/redgate-logo--white.svg?v=1" alt="Redgate logo" width="94" height="23" /></a>
+
+        <span class="hide-on-large">
+            <ul class="header__nav">
+    			<li><a href="https://www.red-gate.com/products/">Products</a>
+                    <ul>
+                        <li>
+                            <a href="https://www.red-gate.com/products/#sql-server" class="js-scroll-to" data-scroll-to-offset="-70">SQL Server</a>
+                            <ul>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-toolbelt">SQL Toolbelt</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-compare">SQL Compare</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-data-compare">SQL Data Compare</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-source-control/">SQL Source Control</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-prompt">SQL Prompt</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-monitor">SQL Monitor</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-provision">SQL Provision</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-clone">SQL Clone</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-data-masker">SQL Data Masker</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-backup">SQL Backup Pro</a></li>
+                                <li><a href="https://www.red-gate.com/products/dlm/dlm-dashboard/">DLM Dashboard</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-change-automation/">SQL Change Automation</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-search/">SQL Search</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-doc">SQL Doc</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-data-generator">SQL Data Generator</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-test">SQL Test</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-dependency-tracker">SQL Dependency Tracker</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-multi-script">SQL Multi Script</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-scripts-manager">SQL Scripts Manager</a></li>
+                                <li><a href="https://www.red-gate.com/products/dba/sql-index-manager">SQL Index Manager</a></li>
+                                <li><a href="https://www.red-gate.com/products/sql-development/sql-comparison-sdk">SQL Comparison SDK</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.red-gate.com/products/#azure" class="js-scroll-to" data-scroll-to-offset="-79">Azure</a>
+                            <ul>
+                                <li><a href="https://www.red-gate.com/products/azure-development/data-platform-studio/">Data Platform Studio</a></li>
+                                <li><a href="https://www.red-gate.com/products/azure-development/azure-explorer/">Azure Explorer (free)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.red-gate.com/products/#net" class="js-scroll-to" data-scroll-to-offset="-70">.NET</a>
+                            <ul>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/dotnet-developer-bundle">.NET Developer Bundle</a></li>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/ants-performance-profiler">ANTS Performance Profiler</a></li>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/ants-memory-profiler">ANTS Memory Profiler</a></li>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/reflector">.NET Reflector</a></li>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/smartassembly">SmartAssembly</a></li>
+                                <li><a href="https://www.red-gate.com/products/dotnet-development/pinvoke">PInvoke .NET</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.red-gate.com/products/#oracle" class="js-scroll-to" data-scroll-to-offset="-70">Oracle</a>
+                            <ul>
+                                <li><a href="https://www.red-gate.com/products/oracle-development/deployment-suite-for-oracle">Deployment Suite for Oracle</a></li>
+                                <li><a href="https://www.red-gate.com/products/oracle-development/data-masker-for-oracle">Data Masker for Oracle</a></li>
+                                <li><a href="https://www.red-gate.com/products/oracle-development/schema-compare-for-oracle">Schema Compare for Oracle</a></li>
+                                <li><a href="https://www.red-gate.com/products/oracle-development/data-compare-for-oracle">Data Compare for Oracle</a></li>
+                                <li><a href="https://www.red-gate.com/products/oracle-development/source-control-for-oracle">Source Control for Oracle</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.red-gate.com/products/#mysql" class="js-scroll-to" data-scroll-to-offset="-70">MySQL</a>
+                            <ul>
+                                <li><a href="https://www.red-gate.com/products/mysql/mysql-comparison-bundle">MySQL Comparison Bundle</a></li>
+                                <li><a href="https://www.red-gate.com/products/mysql/mysql-compare">MySQL Compare</a></li>
+                                <li><a href="https://www.red-gate.com/products/mysql/mysql-data-compare">MySQL Data Compare</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+<li class="js-mega-menu" data-mega-menu="mega-menu--solutions">
+    <a href="https://www.red-gate.com/solutions/overview">Solutions</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/solutions/overview">Overview</a></li>
+        <li>
+            <a href="https://www.red-gate.com/solutions/overview">By Need</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/solutions/need/standardize">Standardize</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/automate">Automate</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/monitor">Monitor</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/protect">Protect</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/solutions/overview">By Role</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/solutions/role/it-management">IT Management</a></li>
+                <li><a href="https://www.red-gate.com/solutions/role/development">Development</a></li>
+                <li><a href="https://www.red-gate.com/solutions/role/operations">Operations</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.red-gate.com/solutions/resources">Resources</a></li>
+        <li><a href="https://www.red-gate.com/solutions/maturity-assessment">Maturity assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="https://productsupport.red-gate.com/hc">Support</a></li>
+
+<li>
+    <a href="https://www.red-gate.com/our-company/">Our Company</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/our-company/careers/current-opportunities/">Careers</a></li>
+        <li><a href="https://www.red-gate.com/our-company/contact-us">Contact us</a></li>
+        <li><a href="https://www.red-gate.com/blog/">Redgate blog</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="https://www.red-gate.com/hub/">Community Hub</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/hub/product-learning">Product learning</a></li>
+        <li><a href="https://www.red-gate.com/hub/university">Redgate University</a></li>
+        <li><a href="http://forum.red-gate.com">Forums</a></li>
+        <li><a href="https://www.red-gate.com/hub/events/">Events &amp; groups</a></li>
+        <li><a href="https://www.red-gate.com/simple-talk/">Simple Talk</a></li>
+    </ul>
+</li>
+            </ul>
+        </span>
+
+        <span class="float-right header--primary__site-tools">
+            <span class="hide-on-medium header__account-container">
+        		<ul class="header__account dropdown js-dropdown">
+                    <div class="show-on-small hide-on-max">
+                        <li><a href="https://www.red-gate.com/search">Search</a></li>
+                        <li><a href="https://www.red-gate.com/account/">My account</a></li>
+                        <li><a href="https://www.red-gate.com/dynamic/purchase/cart/summary?ref=account-nav">Shopping cart</a></li>
+                    </div>
+
+                    <li><a href="https://www.red-gate.com/dynamic/quotes/openquote?ref=account-nav" title="Quotes">Quotes</a></li>
+                </ul>
+            </span>
+
+            <ul class="hide-on-mini padded-left--tight">
+                <li><a href="https://www.red-gate.com/search" class="header--primary__icon icon--search"></a></li>
+                <li><a href="https://www.red-gate.com/account/" class="header--primary__icon icon--user"></a></li>
+                <li class="hide-on-medium"><a href="https://www.red-gate.com/dynamic/purchase/cart/summary?ref=account-nav" class="header--primary__icon icon--shopping-cart" title="View your shopping cart"> <span class="cart__num" data-href="https://www.red-gate.com/Dynamic/Cart/NumberOfItemsInCart"></span></a></li>
+            </ul>
+
+            <span class="hide-on-max show-on-large">
+                <ul>
+                    <li><a href="#menu" class="header--primary__icon header--primary__menu-button"></a></li>
+                </ul>
+            </span>
+        </span>
+
+        <span class="header--primary__menu--mobile">
+            <ul class="dropdown js-dropdown header__account--mobile">
+            </ul>
+            <ul class="js-dropdown">
+    			<li><a href="https://www.red-gate.com/products/">Products</a>
+    <ul>
+        <li>
+            <a href="https://www.red-gate.com/products/#sql-server" class="js-scroll-to" data-scroll-to-offset="-70">SQL Server</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-toolbelt">SQL Toolbelt</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-compare">SQL Compare</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-data-compare">SQL Data Compare</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-source-control/">SQL Source Control</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-prompt">SQL Prompt</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-monitor">SQL Monitor</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-provision">SQL Provision</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-clone">SQL Clone</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-data-masker">SQL Data Masker</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-backup">SQL Backup Pro</a></li>
+                <li><a href="https://www.red-gate.com/products/dlm/dlm-dashboard/">DLM Dashboard</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-change-automation/">SQL Change Automation</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-search/">SQL Search</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-doc">SQL Doc</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-data-generator">SQL Data Generator</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-test">SQL Test</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-dependency-tracker">SQL Dependency Tracker</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-multi-script">SQL Multi Script</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-scripts-manager">SQL Scripts Manager</a></li>
+                <li><a href="https://www.red-gate.com/products/dba/sql-index-manager">SQL Index Manager</a></li>
+                <li><a href="https://www.red-gate.com/products/sql-development/sql-comparison-sdk">SQL Comparison SDK</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/products/#azure" class="js-scroll-to" data-scroll-to-offset="-79">Azure</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/products/azure-development/data-platform-studio/">Data Platform Studio</a></li>
+                <li><a href="https://www.red-gate.com/products/azure-development/azure-explorer/">Azure Explorer (free)</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/products/#net" class="js-scroll-to" data-scroll-to-offset="-70">.NET</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/dotnet-developer-bundle">.NET Developer Bundle</a></li>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/ants-performance-profiler">ANTS Performance Profiler</a></li>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/ants-memory-profiler">ANTS Memory Profiler</a></li>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/reflector">.NET Reflector</a></li>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/smartassembly">SmartAssembly</a></li>
+                <li><a href="https://www.red-gate.com/products/dotnet-development/pinvoke">PInvoke .NET</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/products/#oracle" class="js-scroll-to" data-scroll-to-offset="-70">Oracle</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/products/oracle-development/deployment-suite-for-oracle">Deployment Suite for Oracle</a></li>
+                <li><a href="https://www.red-gate.com/products/oracle-development/data-masker-for-oracle">Data Masker for Oracle</a></li>
+                <li><a href="https://www.red-gate.com/products/oracle-development/schema-compare-for-oracle">Schema Compare for Oracle</a></li>
+                <li><a href="https://www.red-gate.com/products/oracle-development/data-compare-for-oracle">Data Compare for Oracle</a></li>
+                <li><a href="https://www.red-gate.com/products/oracle-development/source-control-for-oracle">Source Control for Oracle</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/products/#mysql" class="js-scroll-to" data-scroll-to-offset="-70">MySQL</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/products/mysql/mysql-comparison-bundle">MySQL Comparison Bundle</a></li>
+                <li><a href="https://www.red-gate.com/products/mysql/mysql-compare">MySQL Compare</a></li>
+                <li><a href="https://www.red-gate.com/products/mysql/mysql-data-compare">MySQL Data Compare</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+<li class="js-mega-menu" data-mega-menu="mega-menu--solutions">
+    <a href="https://www.red-gate.com/solutions/overview">Solutions</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/solutions/overview">Overview</a></li>
+        <li>
+            <a href="https://www.red-gate.com/solutions/overview">By Need</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/solutions/need/standardize">Standardize</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/automate">Automate</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/monitor">Monitor</a></li>
+                <li><a href="https://www.red-gate.com/solutions/need/protect">Protect</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.red-gate.com/solutions/overview">By Role</a>
+            <ul>
+                <li><a href="https://www.red-gate.com/solutions/role/it-management">IT Management</a></li>
+                <li><a href="https://www.red-gate.com/solutions/role/development">Development</a></li>
+                <li><a href="https://www.red-gate.com/solutions/role/operations">Operations</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.red-gate.com/solutions/resources">Resources</a></li>
+        <li><a href="https://www.red-gate.com/solutions/maturity-assessment">Maturity assessment</a></li>
+    </ul>
+</li>
+
+<li><a href="https://productsupport.red-gate.com/hc">Support</a></li>
+
+<li>
+    <a href="https://www.red-gate.com/our-company/">Our Company</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/our-company/careers/current-opportunities/">Careers</a></li>
+        <li><a href="https://www.red-gate.com/our-company/contact-us">Contact us</a></li>
+        <li><a href="https://www.red-gate.com/blog/">Redgate blog</a></li>
+    </ul>
+</li>
+
+<li>
+    <a href="https://www.red-gate.com/hub/">Community Hub</a>
+    <ul>
+        <li><a href="https://www.red-gate.com/hub/product-learning">Product learning</a></li>
+        <li><a href="https://www.red-gate.com/hub/university">Redgate University</a></li>
+        <li><a href="http://forum.red-gate.com">Forums</a></li>
+        <li><a href="https://www.red-gate.com/hub/events/">Events &amp; groups</a></li>
+        <li><a href="https://www.red-gate.com/simple-talk/">Simple Talk</a></li>
+    </ul>
+</li>
+            </ul>
+        </span>
+    </nav>
+</header>
+
+<div class="mega-menu-container">
+    <link rel="stylesheet" href="//cdn.rd.gt/assets/includes/header/mega-menu.css?v=1535711066"/>
+
+    <div class="mega-menu mega-menu--solutions band">
+        <div class="band__inner-container padded padded-h--loose">
+            <div class="grid__row spaced-bottom--tight">
+                <ul class="list--bare list--horizontal flex display--block--small">
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/overview">
+                            <h1 class="text--bold spaced-bottom--none">
+                                <img class="spaced-bottom--none spaced-right--tight js-lazy" alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/cdd.svg" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                Compliant Database DevOps
+                            </h1>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <h1 class="gamma">By need</h1>
+            <div class="grid__row spaced-bottom--tight">
+                <ul class="list--bare list--horizontal flex display--block--small">
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/need/standardize">
+                            <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/standardize.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p><span class="beta text--bold display--block spaced-bottom--none">Standardize</span> team-based development</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/need/automate">
+                            <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/automate.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p><span class="beta text--bold display--block spaced-bottom--none">Automate</span> database deployments</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/need/monitor">
+                            <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/monitor.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p><span class="beta text--bold display--block spaced-bottom--none">Monitor</span> performance and availability</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/need/protect">
+                            <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/protect.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p><span class="beta text--bold display--block spaced-bottom--none">Protect</span> and preserve data</p>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+    
+            <h1 class="gamma">By role</h1>
+            <div class="grid__row">
+                <ul class="list--bare list--horizontal flex display--block--small roles">
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/role/development">
+                            <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/development.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p class="text--bold">Development</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/role/operations">
+                        <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/operations.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p class="text--bold">Operations</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.red-gate.com/solutions/role/it-management">
+                        <img alt="" data-original="//cdn.rd.gt/assets/solutions/images/mega-menu/it-management.svg" class=" js-lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAPLy8v///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==">
+                            <p class="text--bold">IT Management</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <a href="#" class="mega-menu__close icon--cross"></a>
+        </div>
+    </div>
+    <script src="//cdn.rd.gt/assets/includes/header/mega-menu.min.js?v=1535537251"></script>
+</div>	<nav class="nav-bar nav-bar--dark nav-bar--has-captions clearfix padded-left--tight text--center">
+    <h1 class="nav-bar__heading">
+        <a href="https://www.red-gate.com/hub/">
+            <img src="//cdn.rd.gt/assets/images/global/redgate-logo--white.svg?v=1" alt="Redgate logo" width="94" height="23"> 
+			Hub
+        </a>
+    </h1>
+
+    <ul class="float-right">
+        <li><a href="#menu" class="nav-bar__menu-button icon--chevron-up"></a></li>
+    </ul>
+
+    <ul class="hide-on-large">
+        <li><a href="https://www.red-gate.com/hub/product-learning/">Product learning <span>Tips and how-to guides</span></a></li>
+        <li><a href="http://forum.red-gate.com">Community forums <span>Ask, discuss, solve</span></a></li>
+        <li><a href="https://www.red-gate.com/hub/events/">Events &amp; Friends <span>Meet us and join in</span></a></li>
+        <li><a href="https://www.red-gate.com/simple-talk/">Simple Talk <span>Articles &amp; opinion</span></a></li>
+    </ul>
+</nav>	
+	<nav class="site-nav">
+		<nav class="nav-bar">
+			<div class="band__inner-container padded--none">
+				<ul id="menu-secondary-nav" class="site-nav"><li id="menu-item-71639" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-71639"><a href="/simple-talk/">Home</a></li>
+<li id="menu-item-20429" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20429"><a href="https://www.red-gate.com/simple-talk/sql/">SQL</a></li>
+<li id="menu-item-20427" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20427"><a href="https://www.red-gate.com/simple-talk/dotnet/">.NET</a></li>
+<li id="menu-item-20428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20428"><a href="https://www.red-gate.com/simple-talk/cloud/">Cloud</a></li>
+<li id="menu-item-20430" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20430"><a href="https://www.red-gate.com/simple-talk/sysadmin/">Sysadmin</a></li>
+<li id="menu-item-20431" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20431"><a href="https://www.red-gate.com/simple-talk/opinion/">Opinion</a></li>
+<li id="menu-item-20433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20433"><a href="https://www.red-gate.com/simple-talk/books/">Books</a></li>
+<li id="menu-item-20432" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20432"><a href="https://www.red-gate.com/simple-talk/blogs/">Blogs</a></li>
+</ul>
+				<!-- Account nav -->
+				<ul class="site-nav__account hide-on-medium">
+											<li>
+							<a href="https://www.red-gate.com/simple-talk/account/log-in">Log in</a>
+						</li>
+						<li>
+							<a href="https://www.red-gate.com/simple-talk/account/sign-up">Sign up</a>
+						</li>
+										<li>
+						<a href="/simple-talk/feed/" class="icon--rss" title="Simple Talk RSS feed">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</nav>
+
+<div class="band__inner-container content-wrapper">
+	<div class="padded-h--tight">
+		
+		<article class="card grid post-84029 post type-post status-publish format-standard hentry category-editorials category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>		</span>
+		<span class="card__date">17 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>			</span>
+			<span class="card__date">17 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/opinion/editorials/the-future-of-medicine/">The Future of Medicine</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/opinion/editorials/the-future-of-medicine/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="84029 https://www.red-gate.com/simple-talk/?p=84029">1</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_84029" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_84029" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							1						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			If you are a Star Trek fan, you&rsquo;ve seen the future of medicine, or at least how the writers imagine it will be. Painless, needless injections are given by hypospray devices, right through clothing with no chance of cross-contamination. The medical tricorder provides an accurate diagnosis in seconds. Broken bones, illnesses, and injuries are quickly &hellip;			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/the-future-of-medicine/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/the-future-of-medicine/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="84029 https://www.red-gate.com/simple-talk/?p=84029">1</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_84029" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_84029" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						1					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83924 post type-post status-publish format-standard hentry category-bi category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/andy-brown/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Andy-Brown.png" width="80" height="80" alt="Andy Brown" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/andy-brown/" title="Posts by Andy Brown" class="author url fn" rel="author">Andy Brown</a>		</span>
+		<span class="card__date">17 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/andy-brown/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Andy-Brown.png" width="80" height="80" alt="Andy Brown" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/andy-brown/" title="Posts by Andy Brown" class="author url fn" rel="author">Andy Brown</a>			</span>
+			<span class="card__date">17 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/bi/using-the-filter-function-in-dax/">Using the FILTER Function in DAX</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/bi/using-the-filter-function-in-dax/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83924 https://www.red-gate.com/simple-talk/?p=83924">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83924" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83924" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							0						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			In the previous article of this series, Andy Brown of Wise Owl Training explained how to use the oh-so-important CALCULATE function in DAX to make changes to the default filter context within a formula. This article shows how you can use the FILTER function to do something similar and explains the differences between the two approaches. &hellip;			<a href="https://www.red-gate.com/simple-talk/sql/bi/using-the-filter-function-in-dax/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/bi/using-the-filter-function-in-dax/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83924 https://www.red-gate.com/simple-talk/?p=83924">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83924" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83924" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						0					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83876 post type-post status-publish format-standard hentry category-bi category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/dennes-torres/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Dennes-Torres.jpg" width="65" height="65" alt="Dennes Torres" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/dennes-torres/" title="Posts by Dennes Torres" class="author url fn" rel="author">Dennes Torres</a>		</span>
+		<span class="card__date">15 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/dennes-torres/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Dennes-Torres.jpg" width="65" height="65" alt="Dennes Torres" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/dennes-torres/" title="Posts by Dennes Torres" class="author url fn" rel="author">Dennes Torres</a>			</span>
+			<span class="card__date">15 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/bi/power-bi-and-the-matrix-a-challenge/">Power BI and The Matrix: A Challenge</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/bi/power-bi-and-the-matrix-a-challenge/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83876 https://www.red-gate.com/simple-talk/?p=83876">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83876" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83876" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							2						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			The Matrix is one of the many built-in visualizations found in Power BI. While the Matrix is easy to populate, filtering it is not so straightforward. In this article, Dennes Torres explains how to add a slicer that does the job.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/bi/power-bi-and-the-matrix-a-challenge/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/bi/power-bi-and-the-matrix-a-challenge/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83876 https://www.red-gate.com/simple-talk/?p=83876">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83876" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83876" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						2					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83842 post type-post status-publish format-standard hentry category-bi category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/gogula-2/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/01/Gogula_Headshot.jpg" width="71" height="80" alt="Gogula Aryalingam" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/gogula-2/" title="Posts by Gogula Aryalingam" class="author url fn" rel="author">Gogula Aryalingam</a>		</span>
+		<span class="card__date">15 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/gogula-2/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/01/Gogula_Headshot.jpg" width="71" height="80" alt="Gogula Aryalingam" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/gogula-2/" title="Posts by Gogula Aryalingam" class="author url fn" rel="author">Gogula Aryalingam</a>			</span>
+			<span class="card__date">15 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/bi/the-bi-journey-the-experts-advice-part-2/">The BI Journey: The Expert’s Advice – Part 2</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/bi/the-bi-journey-the-experts-advice-part-2/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83842 https://www.red-gate.com/simple-talk/?p=83842">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83842" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83842" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							2						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			A BI project should return value to the company quickly, not only after months or even years of work. In this article by Gogula Aryalingam, Ruthie, the intern, determines which items from her manager's requirements she can complete before the big meeting. She continues working on her semantic model by including a Date table, the star schema, measures, formatting, and more.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/bi/the-bi-journey-the-experts-advice-part-2/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/bi/the-bi-journey-the-experts-advice-part-2/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83842 https://www.red-gate.com/simple-talk/?p=83842">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83842" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83842" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						2					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83781 post type-post status-publish format-standard hentry category-cloud-data category-cloud-development category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/suhaspande/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/07/HeadShotPicture.jpg" width="73" height="80" alt="Suhas Pande" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/suhaspande/" title="Posts by Suhas Pande" class="author url fn" rel="author">Suhas Pande</a>		</span>
+		<span class="card__date">09 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/suhaspande/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/07/HeadShotPicture.jpg" width="73" height="80" alt="Suhas Pande" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/suhaspande/" title="Posts by Suhas Pande" class="author url fn" rel="author">Suhas Pande</a>			</span>
+			<span class="card__date">09 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/cloud/cloud-data/processing-data-using-azure-data-lake-azure-data-analytics-and-microsofts-big-data-language-u-sql/">Processing Data Using Azure Data Lake, Azure Data Analytics, and Microsoft’s Big Data Language U-SQL</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/processing-data-using-azure-data-lake-azure-data-analytics-and-microsofts-big-data-language-u-sql/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83781 https://www.red-gate.com/simple-talk/?p=83781">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83781" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83781" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							1						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-development/" rel="category tag">Cloud Development</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Data analytics has become one of the powerful domains in the world of data science. An enormous amount of data is being generated by each organization in every sector. Computer science has found solutions to store and process this data in a smart way through a distributed file system. One such example is Azure Data Lake. It uses the Hadoop Distributed File System, and to perform analytics on this data, Azure Data Lake storage is integrated with Azure Data Analytics Service and HDInsight. In this article, Suhas Pande will explain how to store data using Azure Data Lake and how to perform data analysis on it using U-SQL, a big data SQL and C# language. &hellip;			<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/processing-data-using-azure-data-lake-azure-data-analytics-and-microsofts-big-data-language-u-sql/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/processing-data-using-azure-data-lake-azure-data-analytics-and-microsofts-big-data-language-u-sql/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83781 https://www.red-gate.com/simple-talk/?p=83781">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83781" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83781" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						1					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-development/" rel="category tag">Cloud Development</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83709 post type-post status-publish format-standard hentry category-cloud-data category-homepage category-performance">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/221867-samir-behara/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/03/Samir-Behara-Profile.jpg" width="80" height="80" alt="Samir Behara" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/221867-samir-behara/" title="Posts by Samir Behara" class="author url fn" rel="author">Samir Behara</a>		</span>
+		<span class="card__date">09 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/221867-samir-behara/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/03/Samir-Behara-Profile.jpg" width="80" height="80" alt="Samir Behara" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/221867-samir-behara/" title="Posts by Samir Behara" class="author url fn" rel="author">Samir Behara</a>			</span>
+			<span class="card__date">09 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/cloud/cloud-data/designing-highly-scalable-database-architectures/">Designing Highly Scalable Database Architectures</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/designing-highly-scalable-database-architectures/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83709 https://www.red-gate.com/simple-talk/?p=83709">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83709" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83709" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							22						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/performance/" rel="category tag">Performance</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			While architecting cloud native applications, you need to ensure that your system is highly available, performant, scalable, fault tolerant, and has the capability to recover from a disaster scenario. In this article, Samir Behara discusses the options available when designing the database architecture to achieve scalability.&hellip;			<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/designing-highly-scalable-database-architectures/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/designing-highly-scalable-database-architectures/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83709 https://www.red-gate.com/simple-talk/?p=83709">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83709" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83709" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						22					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/performance/" rel="category tag">Performance</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83532 post type-post status-publish format-standard hentry category-bi category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>		</span>
+		<span class="card__date">08 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>			</span>
+			<span class="card__date">08 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/bi/reporting-services-basics-overview-and-installation/">Reporting Services Basics: Overview and Installation</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/bi/reporting-services-basics-overview-and-installation/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83532 https://www.red-gate.com/simple-talk/?p=83532">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83532" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83532" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							4						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			SQL Server Reporting Services has changed quite a bit since it was introduced in 2004. Despite new analytic services like Power BI, SSRS is still a popular tool for paginated reports. In this article, Kathi Kellenberger explains the architecture of SSRS and walks you through installing an SSRS development environment on your workstation or laptop.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/bi/reporting-services-basics-overview-and-installation/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/bi/reporting-services-basics-overview-and-installation/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83532 https://www.red-gate.com/simple-talk/?p=83532">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83532" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83532" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						4					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/bi/" rel="category tag">BI</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83742 post type-post status-publish format-standard hentry category-editorials category-homepage tag-sql-provision">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>		</span>
+		<span class="card__date">03 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>			</span>
+			<span class="card__date">03 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/opinion/editorials/scary-stories-from-the-trenches/">Scary Stories from the Trenches</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/opinion/editorials/scary-stories-from-the-trenches/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83742 https://www.red-gate.com/simple-talk/?p=83742">8</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83742" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83742" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							3						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			If you have worked with databases long enough, you probably have many frightening stories to tell about things that have gone awry on the job or problems that were difficult to solve. Accidently dropping a table or trying to fix an issue with the CIO standing right in your cube, repeatedly asking if you&rsquo;ve fixed &hellip;			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/scary-stories-from-the-trenches/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/scary-stories-from-the-trenches/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83742 https://www.red-gate.com/simple-talk/?p=83742">8</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83742" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83742" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						3					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83734 post type-post status-publish format-standard hentry category-cloud-data category-homepage category-nosql-databases">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Adam-Aspin.png" width="80" height="80" alt="Adam Aspin" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" title="Posts by Adam Aspin" class="author url fn" rel="author">Adam Aspin</a>		</span>
+		<span class="card__date">03 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Adam-Aspin.png" width="80" height="80" alt="Adam Aspin" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" title="Posts by Adam Aspin" class="author url fn" rel="author">Adam Aspin</a>			</span>
+			<span class="card__date">03 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/nosql-databases/sql-for-cosmos-db-tips-and-tricks/">SQL For Cosmos DB – Tips and Tricks</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/sql-for-cosmos-db-tips-and-tricks/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83734 https://www.red-gate.com/simple-talk/?p=83734">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83734" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83734" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.3" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							7						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/" rel="category tag">NoSQL Databases</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Building on the introduction to the SQL used by Cosmos DB in the first article in the series, here you will learn how to handle some of the more classic challenges that you may face when querying JSON documents. Adam Aspin shows you some of the workarounds that are useful in practice when finding and shaping output data ready for further analysis.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/sql-for-cosmos-db-tips-and-tricks/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/sql-for-cosmos-db-tips-and-tricks/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83734 https://www.red-gate.com/simple-talk/?p=83734">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83734" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83734" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.3" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						7					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/cloud/cloud-data/" rel="category tag">Cloud Data</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/" rel="category tag">NoSQL Databases</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83726 post type-post status-publish format-standard hentry category-data-protection-and-privacy category-homepage category-oracle tag-sql-provision">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/cyndzikiti/" class="avatar">
+			<img src="https://secure.gravatar.com/avatar/c634e132d090026b805cbdd6aaad249b?s=80&#038;d=mm&#038;r=g" width="80" height="80" alt="" class="avatar-80wp-user-avatar wp-user-avatar-80 alignnone photo avatar-default" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/cyndzikiti/" title="Posts by Cynthia Dzikiti" class="author url fn" rel="author">Cynthia Dzikiti</a>		</span>
+		<span class="card__date">01 April 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/cyndzikiti/" class="avatar">
+			<img src="https://secure.gravatar.com/avatar/c634e132d090026b805cbdd6aaad249b?s=80&#038;d=mm&#038;r=g" width="80" height="80" alt="" class="avatar-80wp-user-avatar wp-user-avatar-80 alignnone photo avatar-default" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/cyndzikiti/" title="Posts by Cynthia Dzikiti" class="author url fn" rel="author">Cynthia Dzikiti</a>			</span>
+			<span class="card__date">01 April 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/oracle/security-considerations-for-erp-applications/">Security Considerations for ERP Applications</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/oracle/security-considerations-for-erp-applications/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83726 https://www.red-gate.com/simple-talk/?p=83726">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83726" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83726" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							3						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/oracle/" rel="category tag">Oracle</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Security is, or at least should be, the priority for any IT system. In this article, Cynthia Dzikiti discusses the security aspects of ERP systems and some of the techniques used to protect data.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/oracle/security-considerations-for-erp-applications/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/oracle/security-considerations-for-erp-applications/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83726 https://www.red-gate.com/simple-talk/?p=83726">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83726" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83726" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						3					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/oracle/" rel="category tag">Oracle</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83701 post type-post status-publish format-standard hentry category-data-protection-and-privacy category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/grant-fritchey/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/08/Grant-Fritchey.png" width="80" height="80" alt="Grant Fritchey" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/grant-fritchey/" title="Posts by Grant Fritchey" class="author url fn" rel="author">Grant Fritchey</a>		</span>
+		<span class="card__date">28 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/grant-fritchey/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/08/Grant-Fritchey.png" width="80" height="80" alt="Grant Fritchey" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/grant-fritchey/" title="Posts by Grant Fritchey" class="author url fn" rel="author">Grant Fritchey</a>			</span>
+			<span class="card__date">28 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/gdpr-in-the-usa/">GDPR in the USA</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/gdpr-in-the-usa/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83701 https://www.red-gate.com/simple-talk/?p=83701">3</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83701" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83701" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							11						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			GDPR enforcement began in May of 2018, but if you are doing business in the US, you may not think it applies to you. Grant Fritchey explains why you might be wrong about that and why you need to act now. &hellip;			<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/gdpr-in-the-usa/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/gdpr-in-the-usa/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83701 https://www.red-gate.com/simple-talk/?p=83701">3</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83701" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83701" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						11					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83682 post type-post status-publish format-standard hentry category-data-protection-and-privacy category-homepage tag-sql-provision">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/robert-sheldon/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/06/Robert-Sheldon.jpg" width="80" height="80" alt="Robert Sheldon" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/robert-sheldon/" title="Posts by Robert Sheldon" class="author url fn" rel="author">Robert Sheldon</a>		</span>
+		<span class="card__date">26 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/robert-sheldon/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/06/Robert-Sheldon.jpg" width="80" height="80" alt="Robert Sheldon" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/robert-sheldon/" title="Posts by Robert Sheldon" class="author url fn" rel="author">Robert Sheldon</a>			</span>
+			<span class="card__date">26 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/introduction-to-sql-server-security-part-4/">Introduction to SQL Server Security — Part 4</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/introduction-to-sql-server-security-part-4/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83682 https://www.red-gate.com/simple-talk/?p=83682">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83682" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83682" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							5						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			The sa account is the most powerful account in a SQL Server instance, and most DBAs disable it. There are several other built-in accounts that you may not think about that often.  Robert Sheldon continues his SQL Server security series with an article about built-in accounts.&hellip;			<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/introduction-to-sql-server-security-part-4/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/introduction-to-sql-server-security-part-4/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83682 https://www.red-gate.com/simple-talk/?p=83682">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83682" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83682" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						5					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sysadmin/data-protection-and-privacy/" rel="category tag">Data Protection and Privacy</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83624 post type-post status-publish format-standard hentry category-sql-development category-homepage category-t-sql-programming tag-sql-prompt">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/malamahadevan/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/03/MM_headshot_D815024-002.jpg" width="80" height="80" alt="Mala Mahadevan" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/malamahadevan/" title="Posts by Mala Mahadevan" class="author url fn" rel="author">Mala Mahadevan</a>		</span>
+		<span class="card__date">13 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/malamahadevan/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2019/03/MM_headshot_D815024-002.jpg" width="80" height="80" alt="Mala Mahadevan" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/malamahadevan/" title="Posts by Mala Mahadevan" class="author url fn" rel="author">Mala Mahadevan</a>			</span>
+			<span class="card__date">13 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/converting-a-history-table-into-a-system-versioned-temporal-table/">Converting a History Table into a System-Versioned Temporal Table</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/converting-a-history-table-into-a-system-versioned-temporal-table/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83624 https://www.red-gate.com/simple-talk/?p=83624">4</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83624" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83624" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							12						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/sql-development/" rel="category tag">Development</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/" rel="category tag">T-SQL Programming</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Temporal tables were introduced with SQL Server 2016. To take advantage of this feature, you might start fresh with a brand new table. It is possible, however, to convert an existing table with accumulated history to the new functionality. In this article, Mala Mahadevan explains how to create temporal tables for both scenarios.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/converting-a-history-table-into-a-system-versioned-temporal-table/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/converting-a-history-table-into-a-system-versioned-temporal-table/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83624 https://www.red-gate.com/simple-talk/?p=83624">4</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83624" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83624" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						12					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/sql-development/" rel="category tag">Development</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/" rel="category tag">T-SQL Programming</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83597 post type-post status-publish format-standard hentry category-c-programming category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/lancetalbert/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/01/red-gate-bio-pic.jpg" width="80" height="80" alt="Lance Talbert" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/lancetalbert/" title="Posts by Lance Talbert" class="author url fn" rel="author">Lance Talbert</a>		</span>
+		<span class="card__date">12 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/lancetalbert/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/01/red-gate-bio-pic.jpg" width="80" height="80" alt="Lance Talbert" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/lancetalbert/" title="Posts by Lance Talbert" class="author url fn" rel="author">Lance Talbert</a>			</span>
+			<span class="card__date">12 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/dotnet/c-programming/breaking-the-4th-wall-with-unity/">Breaking the 4th Wall with Unity</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/dotnet/c-programming/breaking-the-4th-wall-with-unity/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83597 https://www.red-gate.com/simple-talk/?p=83597">1</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83597" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83597" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							0						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/dotnet/c-programming/" rel="category tag">C# programming</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Even when creating games, your code has access to environment variables and document files. In this article, Lance Talbert shows how to access files to convince the player that maybe the game knows more than it should.&hellip;			<a href="https://www.red-gate.com/simple-talk/dotnet/c-programming/breaking-the-4th-wall-with-unity/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/dotnet/c-programming/breaking-the-4th-wall-with-unity/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83597 https://www.red-gate.com/simple-talk/?p=83597">1</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83597" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83597" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						0					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/dotnet/c-programming/" rel="category tag">C# programming</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83589 post type-post status-publish format-standard hentry category-sql-development category-editorials category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kendra-little/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/08/1f4695019c24308eda8c6adbfe34c385.jpeg" width="80" height="80" alt="Kendra Little" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kendra-little/" title="Posts by Kendra Little" class="author url fn" rel="author">Kendra Little</a>		</span>
+		<span class="card__date">12 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kendra-little/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/08/1f4695019c24308eda8c6adbfe34c385.jpeg" width="80" height="80" alt="Kendra Little" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kendra-little/" title="Posts by Kendra Little" class="author url fn" rel="author">Kendra Little</a>			</span>
+			<span class="card__date">12 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/opinion/editorials/why-you-shouldnt-hardcode-the-current-database-name-in-your-views-functions-and-stored-procedures/">Why You Shouldn’t Hardcode the Current Database Name in Your Views, Functions, and Stored Procedures</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/opinion/editorials/why-you-shouldnt-hardcode-the-current-database-name-in-your-views-functions-and-stored-procedures/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83589 https://www.red-gate.com/simple-talk/?p=83589">13</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83589" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83589" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							11						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/sql-development/" rel="category tag">Development</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			&ldquo;There are only two hard things in Computer Science: cache invalidation and naming things&rdquo;Phil Karlton I&rsquo;m terrible at naming things. I recently wrote some quick code to reproduce a design problem and demonstrate several options for solutions, and later realized that I&rsquo;d named my objects dbo.Foo, dbo.FooFoo, and dbo.Wat. But I feel strongly about a &hellip;			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/why-you-shouldnt-hardcode-the-current-database-name-in-your-views-functions-and-stored-procedures/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/why-you-shouldnt-hardcode-the-current-database-name-in-your-views-functions-and-stored-procedures/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83589 https://www.red-gate.com/simple-talk/?p=83589">13</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83589" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83589" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						11					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/sql-development/" rel="category tag">Development</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83584 post type-post status-publish format-standard hentry category-blogs category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>		</span>
+		<span class="card__date">12 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>			</span>
+			<span class="card__date">12 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/blogs/help-shape-the-future-of-sql-monitor/">Help Shape the Future of SQL Monitor</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/blogs/help-shape-the-future-of-sql-monitor/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83584 https://www.red-gate.com/simple-talk/?p=83584">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83584" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83584" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							0						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/blogs/" rel="category tag">Blogs</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Each year, Redgate runs a survey to ask the folks at companies, from DBAs and Devs to CIOs, about how they monitor SQL Server. Those insights help us understand how we can make SQL Monitor more valuable to DBAs &ndash; or anyone responsible for the &ldquo;care and feeding&rdquo; of a SQL Server. The Estate Management &hellip;			<a href="https://www.red-gate.com/simple-talk/blogs/help-shape-the-future-of-sql-monitor/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/blogs/help-shape-the-future-of-sql-monitor/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83584 https://www.red-gate.com/simple-talk/?p=83584">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83584" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83584" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="0" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						0					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/blogs/" rel="category tag">Blogs</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83526 post type-post status-publish format-standard hentry category-homepage category-nosql-databases">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Adam-Aspin.png" width="80" height="80" alt="Adam Aspin" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" title="Posts by Adam Aspin" class="author url fn" rel="author">Adam Aspin</a>		</span>
+		<span class="card__date">06 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Adam-Aspin.png" width="80" height="80" alt="Adam Aspin" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/adam-aspin/" title="Posts by Adam Aspin" class="author url fn" rel="author">Adam Aspin</a>			</span>
+			<span class="card__date">06 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/nosql-databases/introduction-to-sql-for-cosmos-db/">Introduction to SQL for Cosmos DB</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/introduction-to-sql-for-cosmos-db/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83526 https://www.red-gate.com/simple-talk/?p=83526">0</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83526" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83526" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							13						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/" rel="category tag">NoSQL Databases</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			This article by Adam Aspin reviews the Azure Cosmos DB SQL API from the perspective of the relational database developer. More specifically it will show you how to leverage your Structured Query Language skills to exploit the core possibilities of Cosmos DB as a NoSQL document database.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/introduction-to-sql-for-cosmos-db/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/introduction-to-sql-for-cosmos-db/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83526 https://www.red-gate.com/simple-talk/?p=83526">0</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83526" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83526" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						13					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/nosql-databases/" rel="category tag">NoSQL Databases</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83509 post type-post status-publish format-standard hentry category-database-administration category-homepage tag-standardize">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/greg-larsen/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/11/GregLarsen1.jpg" width="69" height="80" alt="Greg Larsen" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/greg-larsen/" title="Posts by Greg Larsen" class="author url fn" rel="author">Greg Larsen</a>		</span>
+		<span class="card__date">05 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/greg-larsen/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/11/GregLarsen1.jpg" width="69" height="80" alt="Greg Larsen" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/greg-larsen/" title="Posts by Greg Larsen" class="author url fn" rel="author">Greg Larsen</a>			</span>
+			<span class="card__date">05 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/database-administration/resumable-online-index-create-and-rebuild-operations/">Resumable Online Index Create and Rebuild Operations</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/database-administration/resumable-online-index-create-and-rebuild-operations/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83509 https://www.red-gate.com/simple-talk/?p=83509">1</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83509" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83509" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							4						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/database-administration/" rel="category tag">Database Administration</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			Index maintenance can be a real headache for database administrators as tables grow larger and maintenance windows shrink. In this article, Greg Larsen demonstrates resumable index operations available with SQL Server 2017 and 2019. This feature helps DBAs work around those small maintenance windows by allowing certain index operations to be paused and restarted again later.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/database-administration/resumable-online-index-create-and-rebuild-operations/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/database-administration/resumable-online-index-create-and-rebuild-operations/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83509 https://www.red-gate.com/simple-talk/?p=83509">1</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83509" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83509" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.8" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						4					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/database-administration/" rel="category tag">Database Administration</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83507 post type-post status-publish format-standard hentry category-editorials category-homepage">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>		</span>
+		<span class="card__date">04 March 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2018/09/Headshot1.jpg" width="80" height="80" alt="Kathi Kellenberger" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/kathi-kellenberger/" title="Posts by Kathi Kellenberger" class="author url fn" rel="author">Kathi Kellenberger</a>			</span>
+			<span class="card__date">04 March 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/opinion/editorials/celebrating-women-in-tech/">Celebrating Women in Tech</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/opinion/editorials/celebrating-women-in-tech/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83507 https://www.red-gate.com/simple-talk/?p=83507">9</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83507" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83507" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							4						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			NASA recently named a facility in honour of Katherine Johnson, the mathematician who performed the calculations for space flights in the 50s and 60s. She was one of the &ldquo;human computers&rdquo; whose stories were made famous by the movie Hidden Figures just a few years ago. Until that movie was released, the contributions of these &hellip;			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/celebrating-women-in-tech/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/opinion/editorials/celebrating-women-in-tech/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83507 https://www.red-gate.com/simple-talk/?p=83507">9</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83507" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83507" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="5" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						4					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/opinion/editorials/" rel="category tag">Editorials</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+<article class="card grid post-83311 post type-post status-publish format-standard hentry category-homepage category-performance category-t-sql-programming tag-standardize">
+
+	<!-- Desktop-width author column -->
+	<div class="grid__col grid__col--span-2-of-12 hide-on-medium">
+		<span class="card__author">
+			<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/phil-factor/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Phil-Factor.png" width="78" height="80" alt="Phil Factor" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/phil-factor/" title="Posts by Phil Factor" class="author url fn" rel="author">Phil Factor</a>		</span>
+		<span class="card__date">26 February 2019</span>
+	</div>
+
+
+	<!-- Main column -->
+	<div class="grid__col grid__col--span-8-of-12 grid__col--span-9-of-12--medium grid__col--span-12-of-12--small">
+		
+		<!--  Medium-width author -->
+		<div class="hide-on-max show-on-medium">
+			<span class="card__author">
+				<div class="avatars">		<a href="https://www.red-gate.com/simple-talk/author/phil-factor/" class="avatar">
+			<img src="https://www.red-gate.com/simple-talk/wp-content/uploads/2016/06/Phil-Factor.png" width="78" height="80" alt="Phil Factor" class="avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo" />		</a>
+	</div>
+<a href="https://www.red-gate.com/simple-talk/author/phil-factor/" title="Posts by Phil Factor" class="author url fn" rel="author">Phil Factor</a>			</span>
+			<span class="card__date">26 February 2019</span>
+		</div>
+
+		<!-- Post title -->
+		<h1><a class="entry-title" rel="bookmark" href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/what-are-inline-indexes/">What are Inline Indexes?</a></h1>
+
+		<!-- Mobile-width metadata -->
+		<div class="hide-on-max show-on-small">
+			<div class="card__meta">
+				<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/what-are-inline-indexes/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83311 https://www.red-gate.com/simple-talk/?p=83311">2</span></a>									<span class="card__rating">
+						
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83311" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83311" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    						<span class="card__rating__count">
+							18						</span>
+					</span>
+								<span class="card__categories">
+					<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/performance/" rel="category tag">Performance</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/" rel="category tag">T-SQL Programming</a></li></ul>				</span>
+			</div>
+		</div>
+
+		<!-- Post excerpt -->
+		<span class="card__excerpt">
+			New releases of SQL Server arrive at a quick pace, and it's difficult to keep up with the many features introduced in each version. In this article, Phil Factor reviews a feature you may have missed, inline indexes. He covers the syntax and the many ways they can be used and then performs some performance tests to see if they can make a difference with table variables.&hellip;			<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/what-are-inline-indexes/" class="card__read-more">Read more</a>
+		</span>
+	</div>
+
+
+	<!-- Desktop-width ratings column-->
+	<div class="grid__col grid__col--span-2-of-12 grid__col--span-3-of-12--medium hide-on-small">
+		<div class="card__meta--side padded-left">
+			<a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/what-are-inline-indexes/#comments" class="card__comments"><span class="comment-counter disqus-comment-count" data-disqus-identifier="83311 https://www.red-gate.com/simple-talk/?p=83311">2</span></a>							<span class="card__rating">
+					
+    <!-- ST Yasr Visitor Votes Readonly Shortcode -->
+    <div id="yasr_visitor_votes_readonly_83311" class="yasr-visitor-votes_readonly"><div class="rateit yasr_visitor_votes_stars_div" id="yasr_rateit_visitor_votes_readonly_83311" data-rateit-starwidth="16" data-rateit-starheight="16" data-rateit-value="4.7" data-rateit-step="1" data-rateit-resetable="false" data-rateit-readonly="true"></div></div>
+    <!-- End ST Yasr Visitor Votes Readonly Shortcode -->
+    					<span class="card__rating__count">
+						18					</span>
+				</span>
+						<span class="card__categories">
+				<ul class="post-categories">
+	<li><a href="https://www.red-gate.com/simple-talk/sql/performance/" rel="category tag">Performance</a></li>
+	<li><a href="https://www.red-gate.com/simple-talk/sql/t-sql-programming/" rel="category tag">T-SQL Programming</a></li></ul>			</span>
+		</div>
+	</div>
+</article>
+	</div>
+</div>
+
+<footer class="site-footer grid scheme--black">
+    <div class="band__inner-container--tight">
+        <div class="grid__col grid__col--span-12-of-12">
+            <h2 class="text--redgate"><a href="https://www.red-gate.com/simple-talk">Simple Talk</a></h2>
+
+            
+            <ul id="menu-footer" class="site-footer__footer-nav"><li id="menu-item-20436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20436"><a href="https://www.red-gate.com/simple-talk/faq/">FAQ</a></li>
+<li id="menu-item-20633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20633"><a href="https://www.red-gate.com/simple-talk/sitemap/">Sitemap</a></li>
+<li id="menu-item-20632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20632"><a href="https://www.red-gate.com/simple-talk/write-for-us/">Write for Redgate</a></li>
+<li id="menu-item-66859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66859"><a href="https://www.red-gate.com/simple-talk/contact-us/">Contact Us</a></li>
+</ul>
+            <p class="site-footer__custom_text"></p>
+        </div>
+    </div>
+</footer>
+
+<footer class="background-color--grey--2">
+    <div class="band__inner-container grid">    
+        <div class="grid__row">
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4><a href="https://www.red-gate.com/products/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label="Products">Products</a></h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#sql-server" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label="SQL Server">SQL Server</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#azure" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label="Azure">Azure</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#net" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label=".NET">.NET</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#oracle" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label="Oracle">Oracle</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#mysql" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Products" data-ga-track-label="MySQL">MySQL</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4><a href="//productsupport.red-gate.com/hc" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Support">Support</a></h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="//forums.red-gate.com" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Forums">Forums</a></li>
+                    <li><a class="color--grey--5" href="https://productsupport.red-gate.com/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Contact product support">Contact product support</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/dynamic/account" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Find my serial numbers">Find my serial numbers</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/old-versions" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Download older versions">Download older versions</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/support/security" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Support" data-ga-track-label="Report security issue">Report security issue</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4><a href="https://www.red-gate.com/solutions/overview" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Solutions" data-ga-track-label="Solutions">Solutions</a></h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/solutions/overview" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Solutions" data-ga-track-label="Overview">Overview</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/solutions/maturity-assessment" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Solutions" data-ga-track-label="Maturity assessment">Maturity Assessment</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4><a href="https://www.red-gate.com/our-company/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Our Company" data-ga-track-label="Our Company">Our Company</a></h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/our-company/careers/current-opportunities" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Our Company" data-ga-track-label="Careers">Careers</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/our-company/contact-us" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Our Company" data-ga-track-label="Contact us">Contact us</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/blog/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Our Company" data-ga-track-label="Blog">Redgate Blog</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/our-company/careers/overview#our-values" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Our Company" data-ga-track-label="Values">Our values</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4><a href="https://www.red-gate.com/hub/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Community & Learning">Community &amp; Learning</a></h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/hub/product-learning" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Product Learning">Product Learning</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/hub/events/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Events & Friends">Events &amp; Friends</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/simple-talk" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Simple Talk">Simple Talk</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/hub/books/" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Books">Books</a></li>
+                    <li><a class="color--grey--5" href="//forums.red-gate.com" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Community & Learning" data-ga-track-label="Forums">Forums</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-2-of-12">
+                <h4>Partners</h4>
+                <ul class="list--bare">
+                    <li><a class="color--grey--5" href="http://www.sqlservercentral.com/" target="_blank" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Partners" data-ga-track-label="SQL Server Central">SQL Server Central</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/#partner-products" target="_blank" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Partners" data-ga-track-label="Partner products">Partner products</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/products/resellers" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Partners" data-ga-track-label="Resellers">Resellers</a></li>
+                    <li><a class="color--grey--5" href="https://www.red-gate.com/training/find-a-consultant" data-ga-track="" data-ga-track-category="Footer" data-ga-track-action="Partners" data-ga-track-label="Consulting partners">Consulting partners</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid__row padded-top">
+            <div class="grid__col grid__col--span-6-of-12">
+                <ul class="list--bare list--horizontal">
+                    <li>Copyright 1999 - 2018 Red Gate Software Ltd</li>
+                    <li class="padded-left--tight"><a href="https://www.red-gate.com/website/legal">Privacy and cookies</a></li>
+                    <li class="padded-left--tight"><a href="https://www.red-gate.com/website/accessibility">Accessibility</a></li>
+					<li class="padded-left--tight"><a href="https://www.red-gate.com/website/modern-slavery">Modern slavery</a></li>
+                </ul>
+            </div>
+
+            <div class="grid__col grid__col--span-6-of-12">
+                <a href="http://www.dbta.com/Editorial/Trends-and-Applications/DBTA-100-2017---The-Companies-That-Matter-Most-in-Data-118003.aspx" class="link-image">
+                    <img src="//cdn.rd.gt/assets/company/images/awards/dbta-100.png" title="Database Trends and Applications Top 100" class="padded-bottom--tight">
+                </a>
+
+                <a href="http://sdtimes.com/sd-times-100/sd-times-100-2017-youve-arrived/" class="link-image padded-left--tight">
+                    <img src="//cdn.rd.gt/assets/company/images/awards/sd-times-2017.png?v=2" title="SD Times Top 100 2017" class="padded-bottom--tight">
+                </a>
+
+                <img src="//cdn.rd.gt/assets/company/images/awards/oracle-gold-partner.png?v=2" title="Oracle Gold Partner" class="padded-left--tight padded-bottom--tight">
+
+                <img src="//cdn.rd.gt/assets/company/images/awards/microsoft-gold-partner.png?v=2" title="Microsoft Gold Partner" class="padded-left--tight padded-bottom--tight">
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scriptParams = {"google_search_engine_id":"002272417707427032016:mpxi5hqackc"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/wp-google-search/assets/js/google_cse_v2.js?ver=1'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/yet-another-stars-rating/js/jquery.rateit.min.js?ver=1.0.22'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var yasrCommonData = {"postid":"84029","ajaxurl":"https:\/\/www.red-gate.com\/simple-talk\/wp-admin\/admin-ajax.php","loggedUser":"","visitorStatsEnabled":"no","tooltipValues":["bad","poor","ok","good","super"],"loaderHtml":"<div id=\"loader-visitor-rating\" >\u00a0 Loading, please wait <img src=https:\/\/www.red-gate.com\/simple-talk\/wp-content\/plugins\/yet-another-stars-rating\/img\/loader.gif title=\"yasr-loader\" alt=\"yasr-loader\"><\/div>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/yet-another-stars-rating/js/yasr-front.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var webcomicCommonJS = {"ajaxurl":"https:\/\/www.red-gate.com\/simple-talk\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/webcomic/srv/collection/common.js?ver=5.0.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var webcomicCommonJS = {"ajaxurl":"https:\/\/www.red-gate.com\/simple-talk\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/webcomic/srv/transcribe/common.js?ver=5.0.5'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.16.0/polyfill.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpOptions = {"siteurl":"https:\/\/www.red-gate.com\/simple-talk"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+if ( typeof $ !== "function" && typeof jQuery === "function" ) { window.$ = jQuery; }
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/themes/simple-talk-theme/assets/scripts/script.min.js?ver=9'></script>
+<script type='text/javascript'>
+var Redgate = Redgate || {}; Redgate.Hub = Redgate.Hub || {}; Redgate.Hub.isHubSubPage = true;
+</script>
+<script type='text/javascript' src='//www.red-gate.com/assets/hub/includes/nav.js'></script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"simpletalk"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.red-gate.com/simple-talk/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.9.9'></script>
+
+</body>
+</html>
