@@ -1,8 +1,8 @@
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution:
     def getLength(self, inputList: ListNode):
@@ -32,9 +32,7 @@ class Solution:
         currL1 = l1
         currL2 = l2
         carryOne = False
-        
-        outputList = ListNode()
-        
+                
         while(elementCounter < maxCount):
             
             currTotal = currL1.val + currL2.val
@@ -48,12 +46,15 @@ class Solution:
             else:
                 outputDigit = currTotal
             
-            insertPoint = outputList
-            while(insertPoint.next != None):
-                insertPoint = insertPoint.next
-            
-            insertPoint.next = ListNode(outputDigit)
+            if(elementCounter == 0):
+                outputList = ListNode(outputDigit)
+            else:
+                insertPoint = outputList
+
+                while(insertPoint.next != None):
+                    insertPoint = insertPoint.next
+                
+                insertPoint.next = ListNode(outputDigit)
             
             elementCounter += 1
-        
         
