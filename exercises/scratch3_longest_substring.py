@@ -100,6 +100,27 @@ f = 2, 3
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        highestMax = 0
+        currentString = s
+        while True:
+            
+            currentMax = self.findCurrentMax(currentString)
+            if(currentMax > highestMax):
+                highestMax = currentMax
+            
+            print(f"currentMax: {currentMax}")
+            print(f"highestMax: {highestMax}")
+
+            currentString = currentString[1:]
+            if(len(currentString) <= highestMax):
+                break
+
+        return highestMax
+
+            
+        
+    def findCurrentMax(self, s: str) -> int:
+
         letterDict = dict()
         substringList = list()
         substringLength = 0
@@ -109,45 +130,30 @@ class Solution:
                 if letterDict.get(s[i]) == None:
                     letterDict[s[i]] = 1
                     substringLength += 1
-                    substringList.append([s[i], substringLength, i])
+                    substringList.append([s[i], substringLength])
 
                 # else case here
                 else:
                     letterDict[s[i]] += 1
                     substringLength = 1
-                    substringList.append([s[i], substringLength, i])
+                    substringList.append([s[i], substringLength])
             
                        
-            print(letterDict)
-            print(substringList)
+            # print(letterDict)
+            # print(substringList)
 
-            # print results
-            maxLen = max(j for i,j,k in substringList)
-            #print(maxLen)
-            #return max(j for i,j in substringList) 
-
-            maxSubstringEndIndexes = [k for i,j,k in substringList if j == maxLen and k > j]
-            
-            if(len(maxSubstringEndIndexes) > 0):
-                for endIndex in maxSubstringEndIndexes:
-                    tempDict = dict()
-                    startIndex = endIndex - maxLen + 1
-                    for i in range(startIndex, endIndex + 1):
-                        print(f"adding '{s[i]} to tempDict...")
-                        tempDict[s[i]] = 1
-                    for i in range(startIndex - 1, 0, -1):
-                        if(tempDict.get(s[i]) == None):
-                            maxLen += 1
-            #print(maxLen)
+            maxLen = max(j for i,j in substringList)
             return maxLen
                         
         else:
             return 0
 
 if __name__ == "__main__":    
-    testString = "anviaj"
+    #testString = "dvdj"
+    # testString = "abcabcbb"
+    testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ "
     sol = Solution()
-    sol.lengthOfLongestSubstring(testString)
+    print(sol.lengthOfLongestSubstring(testString))
 
 
 
