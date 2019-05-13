@@ -46,19 +46,19 @@ Explanation: The answer is "wke", with the length of 3.
 #     sliding window approach?
 #         - check susbtrings from start of string
 #         - if string length > currentMax
-# examples:
-# input: 'anviaj'
-#  1: anviaj' => 'anvi' 'aj', currentMax: 4
-#  2: stringLength(5) > currentMax (4) 
-#     'nviaj' => 'nviaj', currentMax: 5
-#  3: stringLength(5) == currentMax --> stop here and output the currentMax
+#           examples:
+#             input: 'anviaj'
+#              1: anviaj' => 'anvi' 'aj', currentMax: 4
+#              2: stringLength(5) > currentMax (4) 
+#                 'nviaj' => 'nviaj', currentMax: 5
+#              3: stringLength(5) == currentMax --> stop here and output the currentMax
 #         
 # 
-# input: 'dvdf'
-# 1: dvdf => 'dv', 'df', currentMax: 2
-# 2: stringLength(4) > currentMax(2)
-#    'vdf' => 'vdf', currentMax(3)
-# 3: stringLength(3) == currentMax --> stop here and output the currentMax
+#             input: 'dvdf'
+#              1: dvdf => 'dv', 'df', currentMax: 2
+#              2: stringLength(4) > currentMax(2)
+#                'vdf' => 'vdf', currentMax(3)
+#             3: stringLength(3) == currentMax --> stop here and output the currentMax
 #         
 
 
@@ -151,10 +151,6 @@ class Solution:
 if __name__ == "__main__":    
     #testString = "dvdj"
     # testString = "abcabcbb"
-    testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ "
+    testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"
     sol = Solution()
     print(sol.lengthOfLongestSubstring(testString))
-
-
-
-
