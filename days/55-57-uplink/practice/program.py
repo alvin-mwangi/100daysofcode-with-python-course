@@ -1,4 +1,5 @@
 from blog_client import BlogClient
+import datetime
 
 def main():
     val = 'RUN'
@@ -19,7 +20,7 @@ def read_posts():
 
     posts = response.json()
     for idx, p in enumerate(posts, 1):
-        print("{}. [{} views] {}".format(
+        print("{}. [{:,} views] {}".format(
             idx,
             p.get('view_count'), 
             p.get('title')
@@ -45,7 +46,18 @@ def read_posts():
     #print(type(response), response)
 
 def write_post():
-    pass
+    svc = BlogClient()
+
+    title = input("Title: ")
+    content = input("Body contents: ")
+    view_count = int(input("view count (int): "))
+
+    resp = svc.create_new_entry(title, content, view_count)
+    
+    print()
+    print("Created new post successfully: {}".format(resp.json().get('id')))
+    print()
+
 
 if __name__ == "__main__":
     main()
