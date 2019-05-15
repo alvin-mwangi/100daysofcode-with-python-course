@@ -22,7 +22,7 @@ def get_movies_by_keyword():
     inputKeyword = input("Enter a keyword: ")
     svc = MovieSearchClient()
     response = svc.search_by_keyword(inputKeyword)
-    response.raise_for_status()
+    #response.raise_for_status()
     #print(response)
 
     results = response.json()
@@ -34,11 +34,12 @@ def get_movies_by_keyword():
             s.get('title')
         ))
 
+
 def get_movies_by_director():
     inputKeyword = input("Enter a director name: ")
     svc = MovieSearchClient()
     response = svc.search_by_director(inputKeyword)
-    response.raise_for_status()
+    #response.raise_for_status()
     #print(response)
 
     results = response.json()
@@ -55,13 +56,14 @@ def get_movies_by_imdb_id():
     inputKeyword = input("Enter IMDB ID: ")
     svc = MovieSearchClient()
     response = svc.search_by_imdb_number(inputKeyword)
-    response.raise_for_status()
+    #response.raise_for_status()
     #print(response)
 
     results = response.json()
     print("Title: {}".format(
             results.get('title')
     ))
+
 
 if __name__ == "__main__":
     main()
