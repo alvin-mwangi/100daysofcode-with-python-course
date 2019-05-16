@@ -34,6 +34,7 @@ Explanation: The answer is "wke", with the length of 3.
 # use dictionary to keep track of letters we've seen
 # if letter exists, reset counter (create a new island)
 # otherwise, increment the counter 
+<<<<<<< HEAD
 # issues: doesn't work if larger island/substring can be found starting from middle of one of the islands
 # example: dvdf: islands: 'dv' and 'df'
 # however, larger island/substring possible starting from 'v' 
@@ -60,6 +61,8 @@ Explanation: The answer is "wke", with the length of 3.
 #                'vdf' => 'vdf', currentMax(3)
 #             3: stringLength(3) == currentMax --> stop here and output the currentMax
 #         
+=======
+>>>>>>> parent of d160611... tempdict approach -- not working
 
 
 '''
@@ -126,16 +129,21 @@ class Solution:
         substringLength = 0
         
         if(len(s) > 0):
-            for i in range(0, len(s)):
-                if letterDict.get(s[i]) == None:
-                    letterDict[s[i]] = 1
+            for i in s:
+                if letterDict.get(i) == None:
+                    letterDict[i] = 1
                     substringLength += 1
+<<<<<<< HEAD
                     substringList.append([s[i], substringLength])
+=======
+                    substringList.append([i, substringLength])
+>>>>>>> parent of d160611... tempdict approach -- not working
 
                 # else case here
                 else:
-                    letterDict[s[i]] += 1
+                    letterDict[i] += 1
                     substringLength = 1
+<<<<<<< HEAD
                     substringList.append([s[i], substringLength])
             
                        
@@ -154,3 +162,25 @@ if __name__ == "__main__":
     testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"
     sol = Solution()
     print(sol.lengthOfLongestSubstring(testString))
+=======
+                    substringList.append([i, substringLength])
+            
+                       
+            print(letterDict)
+            print(substringList)
+
+            # print results
+            maxLen = max(j for i,j in substringList)
+            print(maxLen)
+            #return max(j for i,j in substringList) 
+        else:
+            return 0
+
+if __name__ == "__main__":        
+    sol = Solution()
+    sol.lengthOfLongestSubstring("dvdf")
+
+
+    
+
+>>>>>>> parent of d160611... tempdict approach -- not working
