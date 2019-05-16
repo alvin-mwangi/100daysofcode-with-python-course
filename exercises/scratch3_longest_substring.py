@@ -68,12 +68,23 @@ f = 2, 3
          for each letter in original string starting from index(endIndex - maxLength) and working down to 0:
              if letter not in dictionary, increment maxLength by 1
     
-        
+
+
+-----------------------------------------------------------------
+--- Alt approach
+...reverse the string and repeat the above
+...if longest substring from reversed > forward, 
 
 '''
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        forwardMax = self.checkLongestSubstring(s)
+        reverseMax = self.checkLongestSubstring(s[::-1])
+
+        return max(forwardMax, reverseMax)
+    
+    def checkLongestSubstring(self, s: str) -> int:
         letterDict = dict()
         substringList = list()
         substringLength = 0
@@ -97,15 +108,18 @@ class Solution:
 
             # print results
             maxLen = max(j for i,j in substringList)
-            print(maxLen)
+            #print(maxLen)
             #return max(j for i,j in substringList) 
+            return maxLen
+
         else:
             return 0
-
+        
+        
 if __name__ == "__main__":        
     sol = Solution()
-    sol.lengthOfLongestSubstring("dvdf")
+    testStr = "asjrgapa"
 
-
+    maxSubstrLen = sol.lengthOfLongestSubstring(testStr)
     
-
+    print(maxSubstrLen)
