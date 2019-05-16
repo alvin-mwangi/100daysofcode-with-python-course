@@ -34,38 +34,6 @@ Explanation: The answer is "wke", with the length of 3.
 # use dictionary to keep track of letters we've seen
 # if letter exists, reset counter (create a new island)
 # otherwise, increment the counter 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# issues: doesn't work if larger island/substring can be found starting from middle of one of the islands
-# example: dvdf: islands: 'dv' and 'df'
-# however, larger island/substring possible starting from 'v' 
-# (within first island): 'd' and 'vdf'
-# how to check this? 
-# solutions: 
-#     find substrings of max length and work backward? 
-#        --- doesn't work if substring is at start of string 
-#         -- e.g., 'anviaj' => 'anvi' 
-#     sliding window approach?
-#         - check susbtrings from start of string
-#         - if string length > currentMax
-#           examples:
-#             input: 'anviaj'
-#              1: anviaj' => 'anvi' 'aj', currentMax: 4
-#              2: stringLength(5) > currentMax (4) 
-#                 'nviaj' => 'nviaj', currentMax: 5
-#              3: stringLength(5) == currentMax --> stop here and output the currentMax
-#         
-# 
-#             input: 'dvdf'
-#              1: dvdf => 'dv', 'df', currentMax: 2
-#              2: stringLength(4) > currentMax(2)
-#                'vdf' => 'vdf', currentMax(3)
-#             3: stringLength(3) == currentMax --> stop here and output the currentMax
-#         
-=======
->>>>>>> parent of d160611... tempdict approach -- not working
-=======
->>>>>>> parent of d160611... tempdict approach -- not working
 
 
 '''
@@ -106,27 +74,6 @@ f = 2, 3
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        highestMax = 0
-        currentString = s
-        while True:
-            
-            currentMax = self.findCurrentMax(currentString)
-            if(currentMax > highestMax):
-                highestMax = currentMax
-            
-            print(f"currentMax: {currentMax}")
-            print(f"highestMax: {highestMax}")
-
-            currentString = currentString[1:]
-            if(len(currentString) <= highestMax):
-                break
-
-        return highestMax
-
-            
-        
-    def findCurrentMax(self, s: str) -> int:
-
         letterDict = dict()
         substringList = list()
         substringLength = 0
@@ -136,41 +83,12 @@ class Solution:
                 if letterDict.get(i) == None:
                     letterDict[i] = 1
                     substringLength += 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    substringList.append([s[i], substringLength])
-=======
                     substringList.append([i, substringLength])
->>>>>>> parent of d160611... tempdict approach -- not working
-=======
-                    substringList.append([i, substringLength])
->>>>>>> parent of d160611... tempdict approach -- not working
 
                 # else case here
                 else:
                     letterDict[i] += 1
                     substringLength = 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    substringList.append([s[i], substringLength])
-            
-                       
-            # print(letterDict)
-            # print(substringList)
-
-            maxLen = max(j for i,j in substringList)
-            return maxLen
-                        
-        else:
-            return 0
-
-if __name__ == "__main__":    
-    #testString = "dvdj"
-    # testString = "abcabcbb"
-    testString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"
-    sol = Solution()
-    print(sol.lengthOfLongestSubstring(testString))
-=======
                     substringList.append([i, substringLength])
             
                        
@@ -186,26 +104,8 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":        
     sol = Solution()
-=======
-                    substringList.append([i, substringLength])
-            
-                       
-            print(letterDict)
-            print(substringList)
-
-            # print results
-            maxLen = max(j for i,j in substringList)
-            print(maxLen)
-            #return max(j for i,j in substringList) 
-        else:
-            return 0
-
-if __name__ == "__main__":        
-    sol = Solution()
->>>>>>> parent of d160611... tempdict approach -- not working
     sol.lengthOfLongestSubstring("dvdf")
 
 
     
 
->>>>>>> parent of d160611... tempdict approach -- not working
