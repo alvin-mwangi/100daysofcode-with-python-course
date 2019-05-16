@@ -35,6 +35,7 @@ Explanation: The answer is "wke", with the length of 3.
 # if letter exists, reset counter (create a new island)
 # otherwise, increment the counter 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # issues: doesn't work if larger island/substring can be found starting from middle of one of the islands
 # example: dvdf: islands: 'dv' and 'df'
 # however, larger island/substring possible starting from 'v' 
@@ -61,6 +62,8 @@ Explanation: The answer is "wke", with the length of 3.
 #                'vdf' => 'vdf', currentMax(3)
 #             3: stringLength(3) == currentMax --> stop here and output the currentMax
 #         
+=======
+>>>>>>> parent of d160611... tempdict approach -- not working
 =======
 >>>>>>> parent of d160611... tempdict approach -- not working
 
@@ -134,7 +137,11 @@ class Solution:
                     letterDict[i] = 1
                     substringLength += 1
 <<<<<<< HEAD
+<<<<<<< HEAD
                     substringList.append([s[i], substringLength])
+=======
+                    substringList.append([i, substringLength])
+>>>>>>> parent of d160611... tempdict approach -- not working
 =======
                     substringList.append([i, substringLength])
 >>>>>>> parent of d160611... tempdict approach -- not working
@@ -143,6 +150,7 @@ class Solution:
                 else:
                     letterDict[i] += 1
                     substringLength = 1
+<<<<<<< HEAD
 <<<<<<< HEAD
                     substringList.append([s[i], substringLength])
             
@@ -178,6 +186,23 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":        
     sol = Solution()
+=======
+                    substringList.append([i, substringLength])
+            
+                       
+            print(letterDict)
+            print(substringList)
+
+            # print results
+            maxLen = max(j for i,j in substringList)
+            print(maxLen)
+            #return max(j for i,j in substringList) 
+        else:
+            return 0
+
+if __name__ == "__main__":        
+    sol = Solution()
+>>>>>>> parent of d160611... tempdict approach -- not working
     sol.lengthOfLongestSubstring("dvdf")
 
 
