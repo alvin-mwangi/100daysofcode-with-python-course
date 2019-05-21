@@ -75,39 +75,75 @@ f = 2, 3
 ...reverse the string and repeat the above
 ...if longest substring from reversed > forward, 
 
+
+
+-----------------------------------------------------------------
+--- Another Alt approach
+--- start with standard gaps and islands approach
+--- when we find a character we've seen before, and the index of that character <= length of string - 2 (must be at least one character after it):
+    - 1. save the current max
+    - 2. backtrack to previous occurence of that character + 1
+    - 3. restart from that point onward 
+
+
 '''
 
+
+
 class Solution:
+    
+    substringList = list()
+    # substringLength = 0
+    
     def lengthOfLongestSubstring(self, s: str) -> int:
         forwardMax = self.checkLongestSubstring(s)
-        reverseMax = self.checkLongestSubstring(s[::-1])
+        reverseMax = 0# self.checkLongestSubstring(s[::-1])
 
+        self.inputLength = len(s)
         return max(forwardMax, reverseMax)
     
     def checkLongestSubstring(self, s: str) -> int:
         letterDict = dict()
-        substringList = list()
+        inputLength = len(s)
         substringLength = 0
-        
-        if(len(s) > 0):
-            for i in s:
-                if letterDict.get(i) == None:
-                    letterDict[i] = 1
+        print(f'processing input substring: {s}')
+        print(f'letterDict: {letterDict}')
+        print(f'inputLength: {inputLength}')
+
+        if(inputLength > 0):
+            for i in range(0, inputLength):
+                print(f'looking at: {s[i]}')
+                prevOccurenceIdx = letterDict.get(s[i])
+                if prevOccurenceIdx == None:
+                    letterDict[s[i]] = i # store index of first occurence
                     substringLength += 1
-                    substringList.append([i, substringLength])
+                    self.substringList.append([s[i], substringLength])
 
                 # else case here
                 else:
-                    letterDict[i] += 1
-                    substringLength = 1
-                    substringList.append([i, substringLength])
-            
+                    #self.substringList.append([s[i], substringLength])
+                    print(f'repeating char was found at index {i}')
+                    if(i <= inputLength - 2): # must be at least one character following the new occurence of this repeating char
+                        # reset substring    
+                        print(f'letterDict: {letterDict}')                           
+                        print(f'prev occurence of {s[i]} was at index {prevOccurenceIdx}')
+                        print('starting recursive call...')
+                        s = s[prevOccurenceIdx+1:]
+                        print(f"new substring is: '{s}'")
+                        return self.checkLongestSubstring(s)
+
+                    else:
+                        #letterDict[s[i]] += 1
+                        substringLength = 1
+                        self.substringList.append([s[i], substringLength])
+                        break
+                
                        
             print(letterDict)
-            print(substringList)
+            print(self.substringList)
 
             # print results
-            maxLen = max(j for i,j in substringList)
+            maxLen = max(j for i,j in self.substringList)
             #print(maxLen)
             #return max(j for i,j in substringList) 
             return maxLen
@@ -118,8 +154,10 @@ class Solution:
         
 if __name__ == "__main__":        
     sol = Solution()
-    testStr = "asjrgapa"
-
+    # testStr = "asjrgapa"
+    # testStr = "dvdf"
+    testStr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ " #abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ "
+    
     maxSubstrLen = sol.lengthOfLongestSubstring(testStr)
     
     print(maxSubstrLen)
